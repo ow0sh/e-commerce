@@ -117,8 +117,8 @@ export default function Main({ setCount }: Props) {
         </h1>
         <p className="max-w-[450px] text-gray-500 font-default">
           These low-profile sneakers are your perfect casual wear companion.
-          Featuring a durable rubber outer sole, they'll withstand everything
-          the weather can offer.
+          Featuring a durable rubber outer sole, they&apos;ll withstand
+          everything the weather can offer.
         </p>
         <div className="py-[30px] font-default">
           <div className="flex text-3xl font-bold">
