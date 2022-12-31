@@ -68,6 +68,7 @@ export default function Main({ setCount }: Props) {
           src={activeImg}
           className="w-[450px] h-[450px] rounded-xl cursor-pointer"
           id="mainImage"
+          draggable="false"
         />
         <ul className="flex justify-between mt-9">
           <li
@@ -77,7 +78,11 @@ export default function Main({ setCount }: Props) {
               handlerClick('image-product-1.jpg');
             }}
           >
-            <img src="image-product-1-thumbnail.jpg" className="opacity-25" />
+            <img
+              src="image-product-1-thumbnail.jpg"
+              className="opacity-25"
+              draggable="false"
+            />
           </li>
           <li
             className="rounded-xl w-24 h-24 overflow-hidden hover:opacity-50"
@@ -86,7 +91,7 @@ export default function Main({ setCount }: Props) {
               handlerClick('image-product-2.jpg');
             }}
           >
-            <img src="image-product-2-thumbnail.jpg" />
+            <img src="image-product-2-thumbnail.jpg" draggable="false" />
           </li>
           <li
             className="rounded-xl w-24 h-24 overflow-hidden hover:opacity-50"
@@ -95,7 +100,7 @@ export default function Main({ setCount }: Props) {
               handlerClick('image-product-3.jpg');
             }}
           >
-            <img src="image-product-3-thumbnail.jpg" />
+            <img src="image-product-3-thumbnail.jpg" draggable="false" />
           </li>
           <li
             className="rounded-xl w-24 h-24 overflow-hidden hover:opacity-50"
@@ -104,7 +109,7 @@ export default function Main({ setCount }: Props) {
               handlerClick('image-product-4.jpg');
             }}
           >
-            <img src="image-product-4-thumbnail.jpg" />
+            <img src="image-product-4-thumbnail.jpg" draggable="false" />
           </li>
         </ul>
       </section>

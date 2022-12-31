@@ -68,6 +68,7 @@ const Header = ({ cartPurchases, reset }: Props) => {
             src="icon-cart.svg"
             className="w-[32px] h-[30px] my-auto mr-[30px] cursor-pointer"
             alt=""
+            draggable="false"
           />
           <div
             id="cartModal"
@@ -87,6 +88,7 @@ const Header = ({ cartPurchases, reset }: Props) => {
                   <img
                     src="image-product-1-thumbnail.jpg"
                     className="w-[50px] h-[50px] rounded"
+                    draggable="false"
                   />
                   <div className="font-default ml-[10px]">
                     <img
@@ -94,6 +96,7 @@ const Header = ({ cartPurchases, reset }: Props) => {
                       alt=""
                       className="fixed ml-[230px] mt-[15px]"
                       onClick={reset}
+                      draggable="false"
                     />
                     <h3 className="text-gray-500">
                       Fall Limited Edition Sneakers
@@ -116,6 +119,7 @@ const Header = ({ cartPurchases, reset }: Props) => {
             src="image-avatar.png"
             className="hover:border-2 hover:border-orange rounded-full w-[50px] h-[50px] cursor-pointer"
             alt=""
+            draggable="false"
           />
         </div>
       </section>

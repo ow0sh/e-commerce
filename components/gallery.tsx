@@ -96,18 +96,22 @@ function Gallery({ isHidden }: Props) {
       id="galleryModal"
       className="flex flex-col justify-center content-center flex-wrap h-[750px] w-[620px] absolute"
     >
-      <img src={currentImg} className="w-[550px] h-[550px] rounded-xl" />
+      <img
+        src={currentImg}
+        className="w-[550px] h-[550px] rounded-xl"
+        draggable="false"
+      />
       <div
         onClick={prevImage}
         className="select-none top-[275px] rounded-full bg-white h-[50px] w-[50px] absolute flex flex-col flex-wrap justify-center content-center left-[12px] cursor-pointer "
       >
-        <img src="icon-previous.svg" />
+        <img src="icon-previous.svg" draggable="false" />
       </div>
       <div
         onClick={nextImage}
         className="select-none top-[275px] rounded-full bg-white h-[50px] w-[50px] absolute flex flex-col flex-wrap justify-center content-center left-[560px] cursor-pointer"
       >
-        <img src="icon-next.svg" />
+        <img src="icon-next.svg" draggable="false" />
       </div>
 
       <ul className="flex mx-auto justify-between w-[450px] mt-[30px]">
@@ -121,7 +125,7 @@ function Gallery({ isHidden }: Props) {
                 changeImg(image);
               }}
             >
-              <img src={image} />
+              <img src={image} draggable="false" />
             </li>
           );
         })}
